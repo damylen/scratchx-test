@@ -9,6 +9,7 @@
     };
 
     ext.get_temp = function(location, callback) {
+        console.log('Test:' + location);
         // Make an AJAX call to the Open Weather Maps API
         $.ajax({
               url: 'http://api.openweathermap.org/data/2.5/weather?q='+location+'&units=imperial&APPID=cc2802d1857414144e26bc427d116cee',
