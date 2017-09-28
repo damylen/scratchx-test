@@ -17,6 +17,7 @@
               success: function( weather_data ) {
                   // Got the data - parse it and return the temperature
                   temperature = weather_data['main']['temp'];
+                  console.log(temperature);
                   callback(temperature);
               }
         });
